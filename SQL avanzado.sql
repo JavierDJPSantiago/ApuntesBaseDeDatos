@@ -61,14 +61,14 @@ SELECT * FROM film WHERE rental_rate = 2.99 AND rating = "PG-13";
 
 -- OTRA TABLA
 -- LIKE hace lo mismo que "="
--- pedir que me traiga los datos de todas las columnas de la tabla actor, si, el valor de fisrt_name es = TOM;
+-- pedir que me traiga los datos de todas las columnas de la tabla actor, si, el valor de first_name es = TOM;
 SELECT * FROM actor WHERE first_name LIKE "TOM";
 
 -- LIKE su diferencia con "=" es que nos permite usar comodines %
 -- pedir que me traiga los datos de todas las columnas de la tabla actor, si, el valor de fisrt_name TERMINA en e (%e);
 SELECT * FROM actor WHERE first_name LIKE "%e";
 
--- pedir que me traiga los datos de todas las columnas de la tabla actor, si, el valor de fisrt_name inicia en an (an%);
+-- pedir que me traiga los datos de todas las columnas de la tabla actor, si, el valor de first_name inicia en an (an%);
 SELECT * FROM actor WHERE first_name LIKE "an%";
 
 -- pedir que me traiga los datos de todas las columnas de la tabla actor, si, el valor de last_name incluye una n sin importarme la posicion (%n%);

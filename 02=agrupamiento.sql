@@ -22,10 +22,10 @@ SELECT * FROM rental GROUP BY customer_id;
 
 -- Seecciona el country id y el numero de ciudades tambien pero a este ulimo cuentalo y dale el alias total_de_ciudades, estos dos vienen de la tabla city y agrupalos por country_id por lo que la suma ira en funcion a esta agrupacion
 -- regresame los datos de la columna country_id, city_id de la tabla city agrupados por el country_id 
--- COUNT contar: contar cuantas ciudades tiene, sumanod por posicion y no por valor: de no ponerlo colapsaria todo
+-- COUNT contar: contar cuantas ciudades tiene, sumando por posicion y no por valor: de no ponerlo colapsaria todo
 SELECT country_id, count(city_id) AS "total_de_ciudades" FROM city GROUP BY country_id; 
 
--- Seecciona el country_id y el numero de ciudades tambien pero a este ulimo cuentalo y dale el alias total_de_ciudades, estos dos vienen de la tabla city y agrupalos por country_id por lo que la suma ira en funcion a esta agrupacion, pero solo uestra los que su conteo de ciudades sea mayor a 2
+-- Selecciona el country_id y el numero de ciudades tambien pero a este ulimo cuentalo y dale el alias total_de_ciudades, estos dos vienen de la tabla city y agrupalos por country_id por lo que la suma ira en funcion a esta agrupacion, pero solo muestra los que su conteo de ciudades sea mayor a 2
 -- HAVING funciona como where, como is pero se usa en agrupaciones GROUP BY
 SELECT country_id, count(city_id) AS "total_de_ciudades" FROM city GROUP BY country_id HAVING total_de_ciudades >2; 
 
@@ -42,8 +42,8 @@ SELECT country_id, count(city_id) AS "total_de_ciudades" FROM city GROUP BY coun
 
 /*------------------------ EJERCICIO------------------------------------ */
 /*
-MAX nos permite obtener el el valor mas grande
-MIN nos permite obtner el valor mas chico
+MAX nos permite obtener el valor mas grande
+MIN nos permite obtener el valor mas chico
 AVG nos pemite obtener el promedio
 SYM nos suma todos los elementos de una columna
 

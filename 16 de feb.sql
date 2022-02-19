@@ -21,8 +21,8 @@ SELECT * FROM cohorte; -- para la tabla seleccionada
 SELECT * FROM world.city; -- para mostrar una tabla que no esta seleccionada -- procura usar mas este que el de arriba
 
 -- mostrar datos de una columna, pero solo una
-		--  columna FROM nombre Tabla
-SELECT NAME nombre FROM cohorte;
+	--  columna FROM Tabla;
+SELECT nombre FROM cohorte;
 
 -- MOSTRAR DATOS DE COLUMNAS DE UNA TABLA ESPECIFICADA, DE UNA BD NO SELECCIONADA
        -- columna ,otracolumnadeesatabla FROM BD.tabla;
