@@ -36,4 +36,4 @@ INNER JOIN address On city.city_id = address.city_id;
 -- inner join, no importa el orden de los iguales "="
 SELECT CONCAT(first_name, "", last_name) AS "Name", title, description FROM film_text
 INNER JOIN film_actor ON film_actor.film_id = film_text.film_id
-INNER JOIN actor ON film_actor.actor_id = actor.actor_id
+INNER JOIN actor ON film_actor.actor_id = actor.actor_id;
