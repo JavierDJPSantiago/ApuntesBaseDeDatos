@@ -1,4 +1,3 @@
--- cambia nombre de este archivo a sub consultas
 -- Sub consultas
 -- consultamos columnas con otras columnas
 
@@ -17,7 +16,7 @@ SELECT * FROM film_category WHERE category_id IN (7,2,5);
 SELECT * FROM film WHERE film_id IN (SELECT film_id FROM film_category WHERE category_id = 7);
 
 -- film actor es solo tabla pibote: para no tener relación muchos a muchos
--- DE film quiero toda la informacion de sus columnas,donde film_id, pero el film_id que esta en film_actor, pero los film_actor relacionados con el actor id que sea de 76, este id se relaciona con film_actor y regreso los que estan relacionados se regresan a film y esos son los que nos muestra
+-- DE film quiero toda la informacion de sus columnas,donde film_id, obtendra el resultado que arroje IN (film_id que esta en film_actor, los film_actor relacionados con el actor id que sea de 76)
 -- estamos relacionando la tabla film y la tabla film_actor y trabjando con las columnas actor_id y film_id
 SELECT * FROM film WHERE film_id IN (SELECT film_id FROM film_actor WHERE actor_id = 76);
 

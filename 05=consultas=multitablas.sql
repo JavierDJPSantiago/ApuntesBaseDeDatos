@@ -1,9 +1,9 @@
 -- category tiene 3 columnas con 16 registros
 -- language tiene 3 columnas con 6 registros
 -- en total son 22
--- por que se ven mas de 22 (se ven 96)? multiplica todos los valores de la tabla category con la tabla lenguajes: dublica la informacion
+-- por que se ven mas de 22 (se ven 96)? multiplica todos los valores de la tabla category con la tabla lenguage: dublica la informacion
 -- para el valor 1 de categori_id le dio los 6 language_id de language
--- tiene un comportamiento con una utilidad muy especial: -- full join combina todo
+-- tiene un comportamiento full join, combina todo
 SELECT * FROM category, language;
 
 
@@ -37,9 +37,3 @@ INNER JOIN address On city.city_id = address.city_id;
 SELECT CONCAT(first_name, "", last_name) AS "Name", title, description FROM film_text
 INNER JOIN film_actor ON film_actor.film_id = film_text.film_id
 INNER JOIN actor ON film_actor.actor_id = actor.actor_id
-
-
-
-
-
-
